@@ -25,10 +25,11 @@ function formInfo(event) {
   const formName = event.target.name;
   const formValue = event.target.value;
   if (formName === 'email') {
-    formData.email = formValue;
+    formData.email = formValue.trim();
   } else if (formName === 'message') {
-    formData.message = formValue;
+    formData.message = formValue.trim();
   }
+  console.log(formData);
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
