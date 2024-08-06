@@ -43,6 +43,8 @@ function onFormSubmit(event) {
   event.preventDefault();
   event.target.reset();
   localStorage.removeItem('feedback-form-state');
+  formData.email = '';
+  formData.message = '';
 }
 
 formContainer.addEventListener('input', formInfo);
