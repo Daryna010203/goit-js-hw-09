@@ -29,7 +29,6 @@ function formInfo(event) {
   } else if (formName === 'message') {
     formData.message = formValue.trim();
   }
-  console.log(formData);
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
