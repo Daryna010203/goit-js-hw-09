@@ -1,25 +1,83 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+a {
+  color: currentColor;
+  text-decoration: none;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body {
+  padding: 24px;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.header {
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #747bff;
+}
+
+.link-container {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+.gallery {
+  padding-left: 156px;
+  padding-right: 156px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-link {
+  width: 1112px;
+  height: 640px;
+  object-fit: cover;
+  color: beige;
+  font-size: 20px;
+}
+
+.modal-container {
+  background: rgba(46, 47, 66, 0.8);
 }
