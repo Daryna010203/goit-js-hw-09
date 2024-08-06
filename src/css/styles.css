@@ -81,3 +81,69 @@ body {
 .modal-container {
   background: rgba(46, 47, 66, 0.8);
 }
+
+.feedback-form {
+  width: 408px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin: auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+input {
+  padding-left: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+input:active {
+  border: 1px solid #808080;
+}
+
+textarea {
+  padding-left: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  width: 95px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  display: block;
+  border: none;
+}
+
+button:hover {
+  background: #6c8cff;
+}
